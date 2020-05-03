@@ -16,10 +16,14 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": [
-        "@typescript-eslint"
-    ],
     "rules": {
-        "prettier/prettier": ["error"]
-    }
+        "prettier/prettier": "error"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "eslint-plugin-prettier",
+        "eslint-plugin-import",
+        "eslint-plugin-promise",
+        "eslint-plugin-standard"
+    ]
 }
