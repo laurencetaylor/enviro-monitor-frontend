@@ -24,6 +24,7 @@
         "eslint-plugin-prettier",
         "eslint-plugin-import",
         "eslint-plugin-promise",
-        "eslint-plugin-standard"
+        "eslint-plugin-standard",
+        "eslint-plugin-node"
     ]
 }

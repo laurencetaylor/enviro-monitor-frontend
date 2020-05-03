@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src/**"
+    "lint": "eslint src/**",
+    "start": "parcel index.html"
   },
   "author": "Laurence Taylor",
   "license": "ISC",
