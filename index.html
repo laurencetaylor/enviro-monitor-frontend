@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enviro+</title>
-  </head>
-  <body>
-    <h1>Hello world</h1>
-    <script src='./src/app.ts'></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Enviro+</title>
+        <script src="./src/app.ts"></script>
+    </head>
+    <body>
+        <div class="dashboard">
+            <h1 class="header">Enviro+ Dashboard</h1>
+            <h2 class="current-time"><wbr></h2>
+            <div class="stat-bubbles">
+                <div class="bubble">
+                    <p>Temperature</p>
+                    <p class="temperature-text"><wbr></p>
+                </div>
+                <div class="bubble">
+                    <p>Humidity</p>
+                    <p class="humidity-text"><wbr></p>
+                </div>
+                <div class="bubble">
+                    <p>PM 2.5</p>
+                    <p class="pm25-text"><wbr></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            More content down here
+        </div>
+    </body>
 </html>

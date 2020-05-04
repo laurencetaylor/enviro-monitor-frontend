@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src/**",
+    "lint": "eslint 'src/**.ts'",
     "start": "parcel index.html"
   },
   "author": "Laurence Taylor",
@@ -23,14 +23,16 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.5",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-typescript": "^1.0.0",
     "prettier-eslint": "^9.0.1",
     "sass": "^1.26.5",
     "typescript": "^3.8.3"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npm run lint -- --fix"
     }
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
   }
 }

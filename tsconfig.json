@@ -1,5 +1,8 @@
 {
-    "parcelTsPluginOptions": {
-      "transpileOnly": false
-    }
+    "compileOptions": {
+      "transpileOnly": false,
+      "strict": true,
+      "lib": [ "es2015", "dom" ]    
+    },
+    "exclude": ["node_modules", "**/*.spec.ts"]
 }
