@@ -2,13 +2,13 @@ import axios from 'axios';
 
 import { RPI_IP } from '../../.env';
 
-interface Parameters {
+interface IParameters {
     dateFrom?: string;
     dateTo?: string;
     limit?: number;
 }
 
-const constructUrl = (params: Parameters = {}): string => {
+const constructUrl = (params: IParameters = {}): string => {
     let url = `${RPI_IP}/readings?`;
 
     const arr = [];
@@ -20,7 +20,7 @@ const constructUrl = (params: Parameters = {}): string => {
     return url;
 };
 
-const getEnviroReadings = (params: Parameters = {}): Promise<any> => {
+const getEnviroReadings = (params: IParameters = {}): Promise<any> => {
     const url = constructUrl(params);
 
     return axios.get(url);
