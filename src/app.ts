@@ -2,8 +2,8 @@ import './styles/index.scss';
 
 import { getEnviroReadings } from './api/getEnviroReadings';
 import { startClock } from './startClock';
-import { setBubbleColors } from './setBubbleColors';
-import { setBubbleValues } from './setBubbleValues';
+import { setBubbleColors, setBubbleValues } from './bubbles';
+import { drawChart } from './chart/drawChart';
 
 const fillDataBubbles = async (): Promise<void> => {
     const res = await getEnviroReadings({ limit: 1 });
@@ -16,4 +16,5 @@ const fillDataBubbles = async (): Promise<void> => {
 window.onload = (): void => {
     startClock();
     fillDataBubbles();
+    drawChart();
 };
