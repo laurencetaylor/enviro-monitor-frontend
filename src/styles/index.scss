@@ -3,8 +3,6 @@ body {
 }
 
 .dashboard {
-    height: 100vh;
-    width: 100vw;
     font-family: Helvetica, Arial, sans-serif;
 
     .header {
@@ -25,8 +23,6 @@ body {
             margin: 2.5rem;
             display: inline-block;
             border: solid black 0.25rem;
-
-            // background-color: yellow;
         }
 
         .category {
@@ -35,7 +31,7 @@ body {
             font-size: 15px;
         }
 
-        .data-value {
+        .value {
             font-size: 20px;
         }
     }
