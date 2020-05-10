@@ -9,9 +9,9 @@ interface Parameters {
 }
 
 const constructUrl = (params: Parameters = {}): string => {
-    let url = `${RPI_IP}/readings`;
+    let url = `${RPI_IP}/readings?`;
 
-    const arr = ['?'];
+    const arr = [];
     if (params.dateFrom) arr.push(`dateFrom=${params.dateFrom}`);
     if (params.dateTo) arr.push(`dateTo=${params.dateTo}`);
     if (params.limit) arr.push(`limit=${params.limit}`);
@@ -20,7 +20,7 @@ const constructUrl = (params: Parameters = {}): string => {
     return url;
 };
 
-const getEnviroReadings = (params: Parameters = {}) => {
+const getEnviroReadings = (params: Parameters = {}): Promise<any> => {
     const url = constructUrl(params);
 
     return axios.get(url);

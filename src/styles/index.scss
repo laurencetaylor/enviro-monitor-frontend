@@ -6,28 +6,37 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-}
 
-.header {
-    text-align: center;
-}
-
-.current-time {
-    text-align: center;
-}
-
-.stat-bubbles {
-    text-align: center;
-
-    .bubble {
-        width: 10rem;
-        height: 10rem;
-        border-radius: 50%;
+    .header {
         text-align: center;
-        margin: 2.5rem;
-        display: inline-block;
+    }
 
-        background-color: yellow;
+    .current-time {
+        text-align: center;
+    }
+
+    .stat-bubbles {
+        text-align: center;
+
+        .bubble {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            margin: 2.5rem;
+            display: inline-block;
+            border: solid black 0.25rem;
+
+            // background-color: yellow;
+        }
+
+        .category {
+            margin-top: 2.75rem;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .data-value {
+            font-size: 20px;
+        }
     }
 }
