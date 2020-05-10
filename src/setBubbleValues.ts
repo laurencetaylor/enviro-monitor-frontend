@@ -27,7 +27,7 @@ const setBubbleValue = (name: ReadingValues, value: number): void => {
     }
 };
 
-const setBubbleValues = (readings: IReadings): void => {
+const setBubbleValues = (readings: Readings): void => {
     Object.keys(readings).forEach(key => {
         const name = ReadingValues[key.toUpperCase()];
 
