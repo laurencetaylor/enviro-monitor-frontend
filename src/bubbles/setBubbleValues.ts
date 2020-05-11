@@ -1,15 +1,15 @@
-enum ReadingValues {
-    HUMIDITY = 'humidity',
-    TEMPERATURE = 'temperature',
-    PM25 = 'pm25'
-}
-
-interface Readings {
+interface IReadings {
     date: string;
     pressure: number;
     temperature: number;
     pm25: number;
     humidity: number;
+}
+
+enum ReadingValues {
+    HUMIDITY = 'humidity',
+    TEMPERATURE = 'temperature',
+    PM25 = 'pm25'
 }
 
 const setBubbleValue = (name: ReadingValues, value: number): void => {
@@ -27,7 +27,7 @@ const setBubbleValue = (name: ReadingValues, value: number): void => {
     }
 };
 
-const setBubbleValues = (readings: Readings): void => {
+const setBubbleValues = (readings: IReadings): void => {
     Object.keys(readings).forEach(key => {
         const name = ReadingValues[key.toUpperCase()];
 
